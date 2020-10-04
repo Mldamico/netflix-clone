@@ -11,8 +11,8 @@ import {
 
 export const Jumbotron = ({ children, direction = 'row', ...restProps }) => {
   return (
-    <ItemStyles direction={direction}>
-      <InnerStyles>{children}</InnerStyles>
+    <ItemStyles {...restProps}>
+      <InnerStyles direction={direction}> {children}</InnerStyles>
     </ItemStyles>
   );
 };

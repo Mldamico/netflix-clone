@@ -21,7 +21,13 @@ export const ItemStyles = styled.div`
   overflow: hidden;
 `;
 
-export const ContainerStyles = styled.div``;
+export const ContainerStyles = styled.div`
+  @media (max-width: 1000px) {
+    ${ItemStyles}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
+`;
 
 export const PaneStyles = styled.div`
   width: 50%;
